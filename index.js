@@ -22,3 +22,15 @@ function driversByRevenue(drivers) {
 
   return sortedDrivers;
 }
+
+function driversByName(drivers) {
+  const sortedDrivers = [...drivers];
+
+  const comparator = function(a, b) {
+    return a.name.localCompare(b.name);
+  }
+
+  sortedDrivers.sort(comparator);
+
+  return sortedDrivers;
+}
