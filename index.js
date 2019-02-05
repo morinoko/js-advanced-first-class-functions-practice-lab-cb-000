@@ -2,13 +2,13 @@
 function logDriverNames(drivers) {
   drivers.forEach(function(driverObject) {
     console.log(driverObject.name);
-  })
+  });
 }
 
 function logDriversByHometown(drivers, location) {
-  drivers.forEach(driverObject) {
+  drivers.forEach(function(driverObject) {
     if (driverObject.hometown === location) {
       console.log(driverObject.name);
     }
-  }
+  });
 }
