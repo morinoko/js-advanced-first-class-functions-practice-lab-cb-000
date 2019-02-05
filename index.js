@@ -1,14 +1,14 @@
 // Code your solution in this file!
 function logDriverNames(drivers) {
-  drivers.forEach(function(driverObject) {
-    console.log(driverObject.name);
+  drivers.forEach(function(driver) {
+    console.log(driver.name);
   });
 }
 
 function logDriversByHometown(drivers, location) {
-  drivers.forEach(function(driverObject) {
+  drivers.forEach(function(driver) {
     if (driverObject.hometown === location) {
-      console.log(driverObject.name);
+      console.log(driver.name);
     }
   });
 }
