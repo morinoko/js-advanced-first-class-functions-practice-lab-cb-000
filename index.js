@@ -27,11 +27,8 @@ function driversByName(drivers) {
   const sortedDrivers = [...drivers];
 
   const comparator = function(a, b) {
-    const driverNameA = a.name;
-    const driverNameB = b.name;
-
-    return driverNameA.localCompare(driverNameB);
-  }
+    return a.name.localeCompare(b.name;
+  };
 
   sortedDrivers.sort(comparator);
 
