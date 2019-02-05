@@ -29,7 +29,7 @@ function driversByName(drivers) {
   const comparator = function(a, b) {
     const driverNameA = a.name;
     const driverNameB = b.name;
-    
+
     return driverNameA.localCompare(driverNameB);
   }
 
