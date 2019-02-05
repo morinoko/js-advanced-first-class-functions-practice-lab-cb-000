@@ -12,3 +12,13 @@ function logDriversByHometown(drivers, location) {
     }
   });
 }
+
+function driversByRevenue(drivers) {
+  const sortedDrivers = [...drivers];
+
+  sortedDrivers.sort(function(a, b) {
+    return a.revenue - b.revenue;
+  });
+
+  return sortedDrivers;
+}
