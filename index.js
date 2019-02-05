@@ -34,3 +34,11 @@ function driversByName(drivers) {
 
   return sortedDrivers;
 }
+
+function totalRevenue(drivers) {
+  const reducer = function (accumulator, currentDriver) {
+    return accumulator +  currentDriver.revenue;
+  };
+
+  return drivers.reduce(reducer, 0);
+}
