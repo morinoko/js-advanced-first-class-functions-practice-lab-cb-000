@@ -35,10 +35,10 @@ function driversByName(drivers) {
   return sortedDrivers;
 }
 
-function totalRevenue(drivers) {
-  const reducer = function (accumulator, currentDriver) {
+ffunction totalRevenue(drivers) {
+  const revenueTotaller = function (accumulator, currentDriver) {
     return accumulator +  currentDriver.revenue;
   };
 
-  return drivers.reduce(reducer, 0);
+  return drivers.reduce(revenueTotaller, 0);
 }
